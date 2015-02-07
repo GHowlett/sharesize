@@ -1,6 +1,7 @@
 var path = require('path');
 var http = require('http');
 var express = require('express');
+var zillow = new (require('node-zillow'))('X1-ZWz1e1hss309vv_89sjr');
 
 var server = express()
 	.use(express.static(__dirname + '/www'))
