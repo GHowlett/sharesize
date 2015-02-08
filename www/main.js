@@ -40,7 +40,13 @@ $('.searchbox button').click(function(e){
 	for (var component in address) 
 		$('#hidden-form [name="address[' + component + ']"]').val(address[component].trim());
 
-	$('#hidden-form').submit();
+	$('.container').removeClass('show');
+});
+
+$('.searchbox button, .next-button').click(function(e){
+	var nextContainer = $(this).parents('.container').eq(0).next();
+	$('.container').removeClass('show');
+	nextContainer.addClass('show');
 });
 
 // dollar sign input field

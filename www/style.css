@@ -53,6 +53,11 @@ header {
 .container {
 	padding-top: 60px;
 	width: 100%;
+	display: none;
+}
+
+.container.show {
+	display: block;
 }
 
 .copy-wrapper {
