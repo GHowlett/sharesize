@@ -9,15 +9,13 @@ hbs.registerPartials(__dirname + '/views/partials');
 var server = express()
 	.set('view engine', 'html')
 	.engine('html', hbs.__express)
+	.use(express.static(__dirname + '/www'))
+	.use(express.static(__dirname + '/bower_components'))
 	.use(express.bodyParser())
 
 server.get('/', function(req,res){
 	res.render("index.html")
 });
-
-server
-	.use(express.static(__dirname + '/www'))
-	.use(express.static(__dirname + '/bower_components'))
 
 var port = process.env.PORT || 3000;
 server.listen(port);
