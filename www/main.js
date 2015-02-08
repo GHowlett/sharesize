@@ -51,7 +51,7 @@ $('.searchbox button, .next-button').click(function(e){
 
 // last input
 $('.container-location .next-button').click(function(e){
-	$('#hidden-form').submit();
+	// TODO: render summary page
 });
 
 // dollar sign input field
