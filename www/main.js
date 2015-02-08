@@ -49,9 +49,34 @@ $('.searchbox button, .next-button').click(function(e){
 	nextContainer.addClass('show');
 });
 
+
+var score = 80
+var renderScore = function() {
+	$(".score-bar").data("score", score);
+	$(".score-text strong").html(score + "%");
+	$(".score-bar .left").css("width", score + "%");  
+	$(".score-bar .right").css("width", (100 - score) + "%");  
+}
+$(function() {
+	renderScore();
+})
+
 // last input
 $('.container-location .next-button').click(function(e){
 	// TODO: render summary page
+
+/*
+
+			<div class="score-bar" data-score="75">
+					<div class="left"><span class="res-downsize">DOWNSIZE</span></div>
+					<div class="right"><span class="res-share">SHARE</span></div>
+				</div>
+				<div class="score-text">Based on your answers, <strong>75%</strong> of people in your situation would downsize to a smaller home.</div>
+				<a href="#"><p style="text-align:center;">Breakdown of your score<p></a>
+			</div>
+*/
+	renderScore();
+
 });
 
 // dollar sign input field

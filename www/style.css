@@ -460,21 +460,28 @@ img {
 }
 
 
+.left {
+	width: 75%;
+	float:left;
+	
+}
 
+.right {
+	width: 25%;
+	float:right;
+}
 span.res-downsize {
     background-color: rgb(1, 216, 1);
-    width: 75%;
     display: inline-block;
     float: left;
     border-radius: 5px 0 0 5px;
-    -webkit-animation: expandd 2s; /* For Safari 3.1 to 6.0 */
+    -webkit-animation: expand 2s; /* For Safari 3.1 to 6.0 */
     animation: expandd 2s;
 }
 
 span.res-share {
     background-color: rgb(255, 124, 147);
     display: inline-block;
-    width: 25%;
     float: right;
     border-radius: 0 5px 5px 0;
     -webkit-animation: expand 2s; /* For Safari 3.1 to 6.0 */
@@ -482,19 +489,19 @@ span.res-share {
 }
 @keyframes expand {
     from { opacity: 0; width: 0;}
-    to   { opacity: 1; width: 25%; }
+    to   { opacity: 1; width: 100%; }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes expand {
     from { opacity: 0; width: 0;}
-    to   { opacity: 1; width: 25%; }
+    to   { opacity: 1; width: 100%; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes expand {
     from { opacity: 0; width: 0;}
-    to   { opacity: 1; width: 25%; }
+    to   { opacity: 1; width: 100%; }
 }
 
 @keyframes expandd {
@@ -527,6 +534,7 @@ span.res-share {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
 }
 
 .score-text {
