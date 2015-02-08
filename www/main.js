@@ -1,15 +1,15 @@
 var autocomplete = new google.maps.places.Autocomplete($('.searchbox input')[0], {types:['geocode']} );
 
+var address = {
+	street: '',
+	city: '',
+	state: '',
+	zip: ''
+}; 
+
 $('.searchbox button').click(function(e){
 
 	var place = autocomplete.getPlace();
-
-	address = {
-		street: '',
-		city: '',
-		state: '',
-		zip: ''
-	};
 
 	// translates google places data to form data
 	var addressForm = {
@@ -64,5 +64,18 @@ var myValue = document.getElementById("income").value;
     }
     
     document.getElementById("income").value = myValue;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

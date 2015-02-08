@@ -201,10 +201,10 @@ h3 {
 
 .results-block {
 	position: absolute;
-	left: 50%;
+	left: 40%;
 	top: 20%;
 	margin: -100px 0 0 -350px;
-	width: 700px;
+	width: 900px;
 	border: 5px solid #D8D8D8;
 	border-radius: 5px;
 	height: 400px;
@@ -334,5 +334,121 @@ input[type=radio] {
 	border: none;
 	padding-left: 130px;
 
+}
+
+/*
+
+<div class="res-locations carousel slide" id="location_0">
+   <div class="res-loc-header">Location 0<span class="res-address">4088 240th pl SE, Issaquah, WA, 98029</span></div>
+   <ul class="res-listings carousel-inner">
+      <div class="res-house">
+         <img src="http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10"><span class="badge">500,000' </span>
+         <div class="caption-container">
+            <div class="caption"><span class="label">Net Gain:</span><span class="value">200,000</span></div>
+            <div class="caption"><span class="label">Monthly Savings:</span><span class="value">4,500</span></div>
+            <div class="caption"><span class="label">Nearest Hospital:</span><span class="value">3.4</span></div>
+         </div>
+      </div>
+      <div class="res-house">
+         <img src="http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10"><span class="badge">500,000' </span>
+         <div class="caption-container">
+            <div class="caption"><span class="label">Net Gain:</span><span class="value">200,000</span></div>
+            <div class="caption"><span class="label">Monthly Savings:</span><span class="value">4,500</span></div>
+            <div class="caption"><span class="label">Nearest Hospital:</span><span class="value">3.4</span></div>
+         </div>
+      </div>
+      <div class="res-house">
+         <img src="http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10"><span class="badge">500,000' </span>
+         <div class="caption-container">
+            <div class="caption"><span class="label">Net Gain:</span><span class="value">200,000</span></div>
+            <div class="caption"><span class="label">Monthly Savings:</span><span class="value">4,500</span></div>
+            <div class="caption"><span class="label">Nearest Hospital:</span><span class="value">3.4</span></div>
+         </div>
+      </div>
+   </ul>
+</div>*/
+
+
+.res-home-container {
+	width: 100%;
+	margin: auto ;
+}
+
+.res-locations {
+	overflow: hidden
+}
+.res-loc-header {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.res-address {
+	color: gray;
+	font-size: 13px;
+	margin-left: 5px;
+}
+.res-listings {
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 0;
+}
+
+.res-house {
+	display:inline-block;
+	float: left;
+	width: 27%;
+	margin-right: 5%;
+	position: relative;
+}
+
+.caption-container {
+    padding-top: 10px;
+}
+
+.res-house img {
+   width: 100%;
+   margin: 0;
+   float:none;
+}
+
+span.badge {
+    position: absolute;
+    top: 5px;
+    color: white;
+    font-size: 13px;
+	background: rgb(83, 83, 83);
+    padding: 2px 5px;
+}
+
+span.label {
+    float: left;
+    color: rgb(80, 80, 80);
+}
+
+span.value {
+    float: right;
+    color: rgb(75, 187, 75);
+    font-weight: bold;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.rec-header {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  border-bottom: 1px solid rgb(107, 107, 107);
+  color: rgb(107, 107, 107);
+  padding-bottom: 10px;
 }
 
