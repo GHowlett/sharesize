@@ -1,6 +1,6 @@
 var housingData =  [
 	{
-		location: '4088 240th pl SE, Issaquah, WA, 98029',
+		location: 'Tampa, FL',
 		houses: [
 			{
 				img: 'http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10',
@@ -10,45 +10,74 @@ var housingData =  [
 				hospitalDist: '3.4'
 			},
 			{
-				img: 'http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10',
-				cost: '500,000',
-				netgain: '200,000',
-				savings: '4,500',
-				hospitalDist: '3.4'
-			},			
+				img: 'http://photos1.zillowstatic.com/p_h/ISx783dl1illej1000000000.jpg',
+				cost: '325,000',
+				netgain: '375,000',
+				savings: '3,600',
+				hospitalDist: '1.5'
+			},		
 			{
-				img: 'http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10',
-				cost: '500,000',
-				netgain: '200,000',
-				savings: '4,500',
-				hospitalDist: '3.4'
-			}
-		]
-	},
-	{
-		location: '4088 240th pl SE, Issaquah, WA, 98029',
-		houses: [
-			{
-				img: 'http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10',
-				cost: '500,000',
-				netgain: '200,000',
-				savings: '4,500',
-				hospitalDist: '3.4'
+				img: 'http://photos1.zillowstatic.com/p_h/IS13nio0iyc9511000000000.jpg',
+				cost: '535,000',
+				netgain: '165,000',
+				savings: '2,100',
+				hospitalDist: '1.8'
 			},
 		]
 	},
+
 	{
-		location: '4088 240th pl SE, Issaquah, WA, 98029',
+		location: 'Issaquah, WA',
 		houses: [
 			{
-				img: 'http://imagesus.homeaway.com/mda01/645856b8-0c65-4143-83eb-21832d115d4a.1.10',
-				cost: '500,000',
-				netgain: '200,000',
-				savings: '4,500',
-				hospitalDist: '3.4'
+				img: 'http://photos1.zillowstatic.com/p_h/ISplhdjoddrw020000000000.jpg',
+				cost: '420,000',
+				netgain: '280,000',
+				savings: '2,100',
+				hospitalDist: '1.2'
+			},
+			{
+				img: 'http://photos1.zillowstatic.com/p_h/IS1n2stxyi1jjx1000000000.jpg',
+				cost: '560,000',
+				netgain: '140,000',
+				savings: '3,400',
+				hospitalDist: '2.4'
+			},
+			{
+				img: 'http://photos1.zillowstatic.com/p_h/IS1jffth6yqq9p1000000000.jpg',
+				cost: '335,000',
+				netgain: '365,000',
+				savings: '1,400',
+				hospitalDist: '1.2'
 			},
 		]
-	}
+	},
+	{
+		location: 'Palm Beach Gardens, FL',
+		houses: [
+			{
+				img: 'http://photos1.zillowstatic.com/p_h/IS1jffth6yqq9p1000000000.jpg',
+				cost: '250,000',
+				netgain: '350,000',
+				savings: '1,600',
+				hospitalDist: '1.5'
+			},
+			{
+				img: 'http://photos1.zillowstatic.com/p_h/ISx783dl1illej1000000000.jpg',
+				cost: '295,000',
+				netgain: '405,000',
+				savings: '4,600',
+				hospitalDist: '1.0'
+			},
+			{
+				img: 'http://photos1.zillowstatic.com/p_h/ISx783dl1illej1000000000.jpg',
+				cost: '295,000',
+				netgain: '405,000',
+				savings: '4,600',
+				hospitalDist: '1.0'
+			},
+		]
+	},
 ];
 
 $(function() {
