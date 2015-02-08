@@ -49,6 +49,11 @@ $('.searchbox button, .next-button').click(function(e){
 	nextContainer.addClass('show');
 });
 
+// last input
+$('.container-location .next-button').click(function(e){
+	$('#hidden-form').submit();
+});
+
 // dollar sign input field
 function handleChange() {
 var myValue = document.getElementById("income").value;
