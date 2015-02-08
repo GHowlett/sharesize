@@ -467,6 +467,8 @@ span.res-downsize {
     display: inline-block;
     float: left;
     border-radius: 5px 0 0 5px;
+    -webkit-animation: expandd 2s; /* For Safari 3.1 to 6.0 */
+    animation: expandd 2s;
 }
 
 span.res-share {
@@ -475,7 +477,43 @@ span.res-share {
     width: 25%;
     float: right;
     border-radius: 0 5px 5px 0;
+    -webkit-animation: expand 2s; /* For Safari 3.1 to 6.0 */
+    animation: expand 2s;
 }
+@keyframes expand {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 25%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes expand {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 25%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes expand {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 25%; }
+}
+
+@keyframes expandd {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 75%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes expandd {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 75%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes expandd {
+    from { opacity: 0; width: 0;}
+    to   { opacity: 1; width: 75%; }
+}
+
 .score-bar {
 	width: 70%;
 	margin: auto;
