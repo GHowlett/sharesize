@@ -1,0 +1,1 @@
+var autocomplete = new google.maps.places.Autocomplete($('.searchbox input')[0], {types:['geocode']} );
