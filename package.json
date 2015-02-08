@@ -15,6 +15,8 @@
   "dependencies": {
     "express": "~3.4.4",
     "hbs": "^2.8.0",
-    "node-zillow": "0.0.3"
+    "node-zillow": "0.0.3",
+    "cheerio": "^0.18.0",
+    "request": "^2.53.0"
   }
 }
