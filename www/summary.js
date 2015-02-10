@@ -63,19 +63,19 @@ var housingData =  [
 				hospitalDist: '1.5'
 			},
 			{
-				img: 'http://photos1.zillowstatic.com/p_h/ISx783dl1illej1000000000.jpg',
-				cost: '295,000',
-				netgain: '405,000',
-				savings: '4,600',
-				hospitalDist: '1.0'
-			},
-			{
-				img: 'http://photos1.zillowstatic.com/p_h/ISx783dl1illej1000000000.jpg',
-				cost: '295,000',
-				netgain: '405,000',
-				savings: '4,600',
-				hospitalDist: '1.0'
-			},
+                img: 'http://photos3.zillowstatic.com/p_h/ISli0n3yvkdx7q1000000000.jpg',
+                cost: '310,000',
+                netgain: '390,000',
+                savings: '2,500',
+                hospitalDist: '3.1'
+            },
+  			{
+                img: 'http://photos3.zillowstatic.com/p_h/ISl6fetve3zzcs0000000000.jpg',
+                cost: '569,000',
+                netgain: '131,000',
+                savings: '1,020',
+                hospitalDist: '2.2'
+            },          
 		]
 	},
 ];
